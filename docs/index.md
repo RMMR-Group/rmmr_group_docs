@@ -1,8 +1,3 @@
-# RMMR Group Docs 
+# Introduction 
 
-## Topics 
-
-* [Ex vivo hemisphere setup](exvivo_hemi/exvivo_hemi.md).
-
-* [IDEA Virtual Machines](idea_vms/idea_vms.md).
-
+This is the documentation for the Robust Methods in Magnetic Resonance (RMMR) Group at the University of Pennsylvania.

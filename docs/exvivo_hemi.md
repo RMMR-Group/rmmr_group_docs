@@ -1,6 +1,6 @@
 #Ex Vivo Hemisphere Setup
 
-![Sample and Coil](./sample_and_coil.jpg)
+![Sample and Coil](exvivo_hemi/sample_and_coil.jpg)
 
 ## Getting the Sample
 
@@ -16,7 +16,7 @@ Look inside the coil and note the "stripes" inside running the length of the coi
 
 Load the sample into the coil. Position it such that it's centered within the transmit/receive elements (not the coil shell!). 
 
-![Coil and Network Analyzer](./coil_and_analyzer.jpg)
+![Coil and Network Analyzer](exvivo_hemi/coil_and_analyzer.jpg)
 
 Bring the loaded coil to the network analyzer in CMROI (there should be a piece of protective paper on the desk, if not, get one from CMROI so we don't make a fomblin mess in CMROI). Turn on the network analyzer and attach both coax cables to the network analyzer in CRMOI.
 
