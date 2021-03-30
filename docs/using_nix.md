@@ -2,6 +2,8 @@
 title: Using nix package manager
 ---
 
+## What is `nix`?
+
 Lots of Dylan's code (and maybe your code too!) uses the `nix` package manager to setup the environment. In theory, this "just works" across both MacOS and Linux systems, and provides complete isolation of your working environment.. You can find info on the `nix` package manager at its website:
 [https://nixos.org](https://nixos.org)
 
