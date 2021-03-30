@@ -1,10 +1,12 @@
-#Ex Vivo Hemisphere Setup
-
 ![Sample and Coil](exvivo_hemi/sample_and_coil.jpg)
+
+## Introduction
+
+We currently scan human hemispheres using the 7T scanner at Stellar Chance. Below is the process for these experiments.
 
 ## Getting the Sample
 
-Samples are picked up from CRB 270/280. Access is through the door for CRB 250. Confirm with #proj_exvivo_mri Slack channel for sample availability.
+Samples are picked up from CRB 270/280. Access is through the door for CRB 250. Confirm with [#proj_exvivo_mri](slack://channel?team=TA20HKQ5R&id=CQ1TPBN9J) Slack channel for sample availability.
 
 When you pick up the sample, the INDD# will be written on the sample bag. Copy down the INDD # in a second location, as you will not be able to see it on the bag once you load the sample in the coil.
 
@@ -76,4 +78,4 @@ Remove the coil (wear gloves!) and bring it back to Karthik's desk. Remove the s
 
 ## Returning the sample
 
-Samples should be returned to Dave's lab (CRB 370/380) with card access through the CRB 350 door. Please post a message to `#proj_exvivo_mri` to let everyone know.
+Samples should be returned to Dave's lab (CRB 370/380) with card access through the CRB 350 door. Please post a message to [#proj_exvivo_mri](slack://channel?team=TA20HKQ5R&id=CQ1TPBN9J) to let everyone know.

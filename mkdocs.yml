@@ -1,2 +1,10 @@
 site_name: RMMR Group Docs
 theme: readthedocs
+
+nav:
+  - Introduction: index.md
+  - Writing Documentation: writing_docs.md
+  - Group Website: website.md
+  - Ex Vivo Hemisphere Scanning: exvivo_hemi.md
+  - Using nix Package Manager: using_nix.md
+  - Programming the Scanner with IDEA: idea_vms.md
