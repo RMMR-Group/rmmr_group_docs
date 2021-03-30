@@ -1,5 +1,3 @@
-# IDEA Virtual Machines
-
-## Getting the materials 
+## Setting up the virtual machines 
 
 ## Accessing the manuals
