@@ -31,3 +31,5 @@ Local testing uses `nix` to setup the environment. You can find more info on set
 Local testing can be done by simply running `nix-shell` in the root directory of the repo, and then running `mkdocs serve`. This starts a basic web server, which you can then access in your web browser at `127.0.0.1`. This will dynamically update as you modify your local copy of the docs.
 
 ## Uploading a change
+
+Once you've got some edits you like, file a pull request against the main repository. This will notify someone to merge it into the "public" documentation.
