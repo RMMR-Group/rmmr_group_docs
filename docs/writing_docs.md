@@ -26,9 +26,13 @@ At the root level you'll find a file named `mkdocs.yml`, which defines the table
 
 ## Local testing
 
-Local testing uses `nix` to setup the environment. You can find more info on setting up `nix` in the ["Using nix Package Manager"](using_nix.md) section.
+Running `mkdocs serve` starts a basic web server, which you can then access in your web browser at `127.0.0.1`. This will dynamically update as you modify your local copy of the docs.
 
-Local testing can be done by simply running `nix-shell` in the root directory of the repo, and then running `mkdocs serve`. This starts a basic web server, which you can then access in your web browser at `127.0.0.1`. This will dynamically update as you modify your local copy of the docs.
+### But I don't have `mkdocs` installed!
+
+You can use any package manager to install `mkdocs` but by default we include an environment description so `nix` can set it up for you. Just run `nix-shell` in the root directory of the documentation package to create a shell with `mkdocs` installed.
+
+You can find more info on setting up `nix` in the ["Using nix Package Manager"](using_nix.md) section.
 
 ## Uploading a change
 
