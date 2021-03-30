@@ -19,6 +19,9 @@ You can fork this repo to your personal github space in order to make changes to
 We're using `mkdocs` to generate the documentation. You can find the manual for `mkdocs` here:
 [https://www.mkdocs.org](https://www.mkdocs.org)
 
+Documentation is written in Markdown, which is designed to be pretty lightweight. You can find a description of the syntax here:
+[https://www.markdownguide.org](https://www.markdownguide.org)
+
 At the root level you'll find a file named `mkdocs.yml`, which defines the table of contents for the documentation. If you add a new file, be sure to add it here so it becomes part of the docs.
 
 ## Local testing
