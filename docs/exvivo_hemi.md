@@ -70,6 +70,70 @@ Set body part to `Brain` if not automatically selected
 
 Make sure both channels are turned on.
 
+
+## Scanning Procedure
+
+Select Localizer from `Research > DTisdall > Ex-vivo_20200106` folder.
+
+Open localizer protocol (has to be open for adjustments to be active)
+
+Options > Adjustments
+
+The adjustments are done in **Frequency, Transmitter and 3D Shim**  cards.
+
+**Frequency  Card**
+
+Hit  Go -> Apply (make sure it converges, might need to repeat a few times) 
+
+![Sample and Coil](exvivo_hemi/frequency_adjustments.jpg)
+
+
+**Transmitter Card** 
+
+Select  'Double Echo Sequence'  from drop down menu.
+
+Starting Voltage can be set to 30 V.
+
+Hit Go > Apply. 
+
+Voltage should be below 70, otherwise there is an issue and you should not proceed with the scan! 
+
+![Sample and Coil](exvivo_hemi/transmitter_adjustments.jpg )
+
+
+**3D Shim Card** 
+
+Select from drop down menues: 
+
+Sequence & Resolution: GRE-Brain  
+Reciever Gain: Low
+
+Measure > Calculate > Apply
+
+![Sample and Coil](exvivo_hemi/shim_adjustments.jpg )
+
+Repeat several times, periodically switch to Frequency tab and hit go. Monitor the FWHM changes ( < 80 OK). Make sure it converges.
+
+Check that both coils are on, then RUN the localizer.
+
+Inspect the localizer images and the slab location box. Move the box to the center of the tissue. 'Window' the localizer images to see the tissue boundaries and check for signal dropout. If necessary move the sample to make sure there are no signal dropout regions. Sometimes if the sample is too big, that might not be possible. In these cases the preference is given to the **FRONT** of the brain (FRONT should not have signal dropout).     
+
+Take another localizer scan. 
+
+When Satisfied with localizer images, open `t2space_0.3mm_P1_normalSAR_4avg`  protocol.
+
+Before copying the parameters, select the ‘coil’ button from ‘head with strips’ icon.
+
+Copy parameters > Copy `Adjust Volume` from localizer to T2 scan protocol. 
+
+See where the green box moves (big green box should be outside). This will prevent automatic re-shimming again. 
+
+Increase the number of slices per slab to include all the tissue inside the yellow box. Periodically ‘Window’ the localizer images to see the tissue boundaries.
+
+Run `t2space_0.3mm_P1_normalSAR_4avg`  protocol. (~1h 55 min )
+
+
+
 ## Breaking down the setup
 
 Take it apart in the opposite order to how you assembled it. Remember to return the "Helmut box" to the shelf, leave the straps wrapped up in their container, and return the foam "sheets" to where you found them.
