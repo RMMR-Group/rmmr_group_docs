@@ -108,6 +108,8 @@ Select from drop down menues:
 Sequence & Resolution: GRE-Brain  
 Reciever Gain: Low
 
+Manually type in the Voltage amplitude from Transmitter Card for best shimming results (light blue homogeneous phase maps).
+
 Measure > Calculate > Apply
 
 ![Sample and Coil](exvivo_hemi/shim_adjustments.jpg )
@@ -120,7 +122,7 @@ Inspect the localizer images and the slab location box. Move the box to the cent
 
 Take another localizer scan. 
 
-When Satisfied with localizer images, open `t2space_0.3mm_P1_normalSAR_4avg`  protocol.
+When satisfied with general localizer images, open the 't2space_0.6mm_* ' protocol.  This is a 5 min scan used as a second localizer to get a better idea of the signal loss accross the hemisphere. 
 
 Before copying the parameters, select the ‘coil’ button from ‘head with strips’ icon.
 
@@ -128,9 +130,11 @@ Copy parameters > Copy `Adjust Volume` from localizer to T2 scan protocol.
 
 See where the green box moves (big green box should be outside). This will prevent automatic re-shimming again. 
 
-Increase the number of slices per slab to include all the tissue inside the yellow box. Periodically ‘Window’ the localizer images to see the tissue boundaries.
+Adjust the position and increase the number of slices per slab to include all the tissue inside the yellow box. Run the localizer. When prompted, select 'Manual' shimming to prevent automatic reshim. Periodically ‘Window’ the localizer images to see the tissue boundaries and check for signal dropout across the hemisphere.
+Readjust the sample inside the coil in case of significant signal dropout in the anterior part of the hemisphere. No need to recalibrate the coil, but manual shimming steps have to be repeated.   
 
-Run `t2space_0.3mm_P1_normalSAR_4avg`  protocol. (~1h 55 min )
+When satisfied with 't2space_0.6mm_* ' localizer images, open the main `t2space_0.3mm_P1_normalSAR_4avg` scan protocol.
+Again, copy shim parameters from the localizer as discussed above. Adjust the position and increase the number of slices per slab to include all the tissue inside the yellow box. Run `t2space_0.3mm_P1_normalSAR_4avg`  protocol (~1h 55 min ). When prompted, select 'Manual' shimming to prevent automatic reshim.
 
 
 
