@@ -7,4 +7,5 @@ nav:
   - Group Website: website.md
   - Ex Vivo Hemisphere Scanning: exvivo_hemi.md
   - Using nix Package Manager: using_nix.md
+  - Using the PMACS cluster : using_pmacs.md
   - Programming the Scanner with IDEA: idea_vms.md
