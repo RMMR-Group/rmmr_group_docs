@@ -31,6 +31,14 @@ Here's a list of the templates associated with each IDEA verson
 | N4VE11C	| RAD-MRI_VE11C_Distribution_Win7_Template 	|  RAD-MRI_VE11C_linux_win7_20160120_mars	|
 | NXVA30A	| RAD-MRI_XA30A_DistributionOVF_win10_Template 	|  RAD-MRI_XA30A_DistributionOVF_linux_win10_Template	|
 
+## Connecting to the VPN
+
+Go to: [https://remote.pmacs.upenn.edu](https://remote.pmacs.upenn.edu) to initiate a connection. If this is your first connection, you will need to install the Pulse Secure App Launcher.
+
+## Connecting to the vSphere
+
+[https://pmacsvc.pmacs.upenn.edu](https://pmacsvc.pmacs.upenn.edu)
+
 ### Configuring the VMs
 
 Stuff about config scripts goes here
