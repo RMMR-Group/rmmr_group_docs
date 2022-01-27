@@ -108,7 +108,7 @@ You can then close the web console for the linux system.
 
 Note that if you need to restart the Linux VM for some reason, you'll need to run those two commands again in order to reconnect it to the network.
 
-#### Windows VE11C
+#### Windows XA30A 
 
 Using the same steps as above, now open the web console for the Windows version of the machine. 
 
