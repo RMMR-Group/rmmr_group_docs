@@ -114,15 +114,26 @@ Using the same steps as above, now open the web console for the Windows version 
 
 Log in with user `IDEA`, password `idea`
 
-Enable sharing on `C:\MIDEA` for user IDEA. When asked if you want to update sharing settings for `C:\MIDEA\VirtualBox\` select `Don't change settings`.
+Start IDEA and run `externalmars true -ip <ip>`, replacing `<ip>` with the IP address of the Linux machine, which you should enter. You should now be able to build the Linux binaries for a given sequence -- try it out before proceeding!
 
 Need to figure out firewall settings. For now, just disable the Windows Firewall.
 
-You should now be able to both connect to this system via RDP and mount MIDEA via SMB. The username:password for both these interfaces is now `adminUser:idea`. From here on out, I like to do things via RDP, and not via the web console.
+You should now be able to connect to this system via RDP (download Microsoft Remote Desktop or similar client). The username:password for is now `adminUser:idea`. From here on out, I like to do things via RDP, and not via the web console.
 
-Start IDEA and run `externalmars true -ip <ip>`, replacing `<ip>` with the IP address of the Linux machine, which you should enter. You should now be able to build the Linux binaries for a given sequence.
+On your local system, checkout the `NXVA30A_162141` branch of the `IDEA_VMWare_Tools` repos from the group github (e.g., check this out to `~/IDEA/NXVA30A_162141`).
 
-Stuff about config scripts goes here.
+Configure your Remote Desktop client to share `~/IDEA/NXVA30A_162141/` with the remote system.
+
+On the remote Windows system, enable sharing on `C:\MIDEA` for user IDEA. When asked if you want to update sharing settings for `C:\MIDEA\VirtualBox\` select `Don't change settings`.
+
+You should now be able to mount `MIDEA` on your local system via SMB, using the `mount_midea_share.bash` script, which will mount it into the current directory as `./midea-mnt`. 
+
+Once the remote drive is mounted locally, run `config_built_dir.sh` to ensure binaries are copied back to your local machine (you only need to do this once).
+
+Put any source packages you have received from Siemens in the `packages` directory and run `install_source.sh`. This can be re-run whenever you get new source packages.
+
+
+
 ## Resetting the virtual machines
 
 If something goes wrong, you can always request PMACS to reset the VM. **THIS WILL ERASE EVERYTHING ON THE MACHINE** so make sure your code is committed and pushed to GitHub. To request a reset, please use the following ticket format:
