@@ -89,6 +89,8 @@ On your local system, checkout the `N4_VE11C_LATEST_20160120` branch of the `ide
 
 Configure your Remote Desktop client to share `~/IDEA/N4_VE11C_LATEST_20160120/` (or wherever you checked out the repos) with the remote system.
 
+![Sharing local drive with VM](idea_vms/RDP_Sharing_interface.jpg)
+
 On the remote Windows system, enable sharing on `C:\MIDEA` for user IDEA. 
 
 You should now be able to mount `MIDEA` on your local system via SMB, using the `mount_midea_share.bash` script, which will mount it into the current directory as `./midea-mnt`. 
