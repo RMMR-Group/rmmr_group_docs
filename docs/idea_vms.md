@@ -77,15 +77,25 @@ Using the same steps as above, now open the web console for the Windows version 
 
 Log in as user `IDEA` password `idea`
 
-Enable sharing on `C:\MIDEA` for user IDEA.
-
 Need to figure out firewall settings. For now, just disable the Windows Firewall.
 
-You should now be able to both connect to this system via RDP and mount MIDEA via SMB. The username:password for both these interfaces is now `idea:idea`. From here on out, I like to do things via RDP, and not via the web console.
+You should now be able to both connect to this system via RDP. The username:password for both these interfaces is now `idea:idea`. From here on out, I like to do things via RDP, and not via the web console.
 
 Start IDEA and run `externalmars true`. You'll be prompted for the IP address of the Linux machine, which you should enter. You should now be able to build the Linux binaries for a given sequence.
 
-Stuff about config scripts goes here.
+You should now be able to connect to this system via RDP (download Microsoft Remote Desktop or similar client). The username:password for is now `idea:idea`. From here on out, I like to do things via RDP, and not via the web console.
+
+On your local system, checkout the `N4_VE11C_LATEST_20160120` branch of the `idea_vmware_tools` repos from the group github. Make sure you name the directory `N4_VE11C_LATEST_20160120`, as scripts rely on this name (e.g., check this out to `~/IDEA/N4_VE11C_LATEST_20160120`).
+
+Configure your Remote Desktop client to share `~/IDEA/N4_VE11C_LATEST_20160120/` (or wherever you checked out the repos) with the remote system.
+
+On the remote Windows system, enable sharing on `C:\MIDEA` for user IDEA. 
+
+You should now be able to mount `MIDEA` on your local system via SMB, using the `mount_midea_share.bash` script, which will mount it into the current directory as `./midea-mnt`. 
+
+Once the remote drive is mounted locally, run `config_built_dir.sh` to ensure binaries are copied back to your local machine (you only need to do this once).
+
+Put any source packages you have received from Siemens in the `packages` directory and run `install_source.sh`. This can be re-run whenever you get new source packages.
 
 ### Configuring XA30A VMs
 
@@ -120,7 +130,7 @@ Need to figure out firewall settings. For now, just disable the Windows Firewall
 
 You should now be able to connect to this system via RDP (download Microsoft Remote Desktop or similar client). The username:password for is now `adminUser:idea`. From here on out, I like to do things via RDP, and not via the web console.
 
-On your local system, checkout the `NXVA30A_162141` branch of the `IDEA_VMWare_Tools` repos from the group github (e.g., check this out to `~/IDEA/NXVA30A_162141`).
+On your local system, checkout the `NXVA30A_162141` branch of the `idea_vmware_tools` repos from the group github. Make sure you name the directory `NXVA30A_162141`, as scripts rely on this name (e.g., check this out to `~/IDEA/NXVA30A_162141`).
 
 Configure your Remote Desktop client to share `~/IDEA/NXVA30A_162141/` with the remote system.
 
