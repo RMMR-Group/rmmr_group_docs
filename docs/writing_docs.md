@@ -1,5 +1,6 @@
 ---
 title: Writing Documentation
+nav_order: 2
 ---
 
 ## What to document
@@ -8,11 +9,11 @@ The general philosophy is to document anything that you think someone else might
 
 If you find documentation that is out of date, please do try to update it. Everything is version controlled, so no information is ever lost when you make an edit. Be bold!
 
-## Forking the repo
+## Editing the docs
 
 The repos for the documentation is here: [https://github.com/RMMR-Group/rmmr_group_docs](https://github.com/RMMR-Group/rmmr_group_docs)
 
-You can fork this repo to your personal github space in order to make changes to it, and file pull requests when you've got an update ready to contribute.
+In general we're not requiring pull requests, etc. as we're not too worried about "breaking" changes to the documentation. Just edit directly on the `main` branch and commit when you're done. Please review your edits on the live website (changes can take a few minutes to appear after you commit them), and fix anything that's not right, so we can keep the docs tidy.
 
 ## Structure of the docs
 
@@ -23,17 +24,3 @@ Documentation is written in Markdown, which is designed to be pretty lightweight
 [https://www.markdownguide.org](https://www.markdownguide.org)
 
 At the root level you'll find a file named `mkdocs.yml`, which defines the table of contents for the documentation. If you add a new file, be sure to add it here so it becomes part of the docs.
-
-## Local testing
-
-Running `mkdocs serve` starts a basic web server, which you can then access in your web browser at `127.0.0.1`. This will dynamically update as you modify your local copy of the docs.
-
-### But I don't have `mkdocs` installed!
-
-You can use any package manager to install `mkdocs` but by default we include an environment description so `nix` can set it up for you. Just run `nix-shell` in the root directory of the documentation package to create a shell with `mkdocs` installed.
-
-You can find more info on setting up `nix` in the ["Using nix Package Manager"](using_nix.md) section.
-
-## Uploading a change
-
-Once you've got some edits you like, file a pull request against the main repository. This will notify someone to merge it into the "public" documentation.
